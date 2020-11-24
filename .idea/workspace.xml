@@ -1,43 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="test3">
-      <change afterPath="$PROJECT_DIR$/Testi2.js" afterDir="false" />
-    </list>
+    <list default="true" id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1kjI2R7evtrZUEZ50tvSbivMTNX" />
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1kjHJCJrkLe0qFuHfWG62B80nHt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,57 +30,37 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="" />
-      <created>1606207366748</created>
+      <changelist id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="" />
+      <created>1606207008544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606207366748</updated>
-      <workItem from="1606207369837" duration="971000" />
+      <updated>1606207008544</updated>
+      <workItem from="1606207010489" duration="1848000" />
     </task>
-    <task id="LOCAL−00001" summary="test3">
-      <created>1606208340336</created>
-      <option name="number" value="LOCAL−00001" />
-      <option name="presentableId" value="LOCAL−00001" />
-      <updated>1606208340336</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="test3" />
-    <option name="LAST_COMMIT_MESSAGE" value="test3" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="125" key="MultipleFileMergeDialog" timestamp="1606208369297">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="520" y="180" key="FileChooserDialogImpl" timestamp="1606209448686">
+      <screen x="0" y="0" width="1465" height="864" />
     </state>
-    <state x="321" y="125" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1606208369297" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606208349045">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="520" y="180" key="FileChooserDialogImpl/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209448686" />
+    <state x="286" y="80" key="SettingsEditor" timestamp="1606209460596">
+      <screen x="0" y="0" width="1465" height="864" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606208349045" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606208466152">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
+    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606209527709">
+      <screen x="0" y="0" width="1465" height="864" />
     </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1606208466152" />
+    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209527709" />
   </component>
 </project>
