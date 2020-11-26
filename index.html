@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <title>AUTOSIVU</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+
+    <!--Tarvittavat kartan tekemiseen -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin="">
+    </script>
+    <script type="text/javascript" src="JS/maakunnat.js"> </script>
+</head>
+
+<body>
+
+
+<main>
+    <header>
+        <figure>
+            <a href="index.html"><img src="KUVAT/logo.jpg"></a>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#">HAKU</a></li>
+                <li><a href="#">TEKIJÄT</a></li>
+                <li><a href="#">OHJEET</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <article id="art1">
+        <div id="kartta">
+            <div id="map1"></div>
+            <script src="JS/kartta.js"></script>
+        </div>
+        <div id="div2">
+            <p>TÄSSÄ TEKSTIÄ</p>
+        </div>
+
+    </article>
+
+    <footer>
+    </footer>
+
+</main>
+
+
+
+
+</body>
+</html>
