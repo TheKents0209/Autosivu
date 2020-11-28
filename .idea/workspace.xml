@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="Map interigated to index.html, added background and logo placeholder, nav added in index.html.">
-      <change afterPath="$PROJECT_DIR$/ohjeet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/palaute.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
+    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="Responsiveness added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KUVAT/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +76,13 @@
       <updated>1606207008544</updated>
       <workItem from="1606207010489" duration="1848000" />
     </task>
+    <task id="LOCAL−00001" summary="fixes">
+      <created>1606575226785</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1606575226785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +100,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes" />
+    <MESSAGE value="Responsiveness added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Responsiveness added" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="520" y="180" key="FileChooserDialogImpl" timestamp="1606209448686">
       <screen x="0" y="0" width="1465" height="864" />
@@ -106,6 +114,10 @@
       <screen x="0" y="0" width="1465" height="864" />
     </state>
     <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1606575231646">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606575231646" />
     <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606209527709">
       <screen x="0" y="0" width="1465" height="864" />
     </state>

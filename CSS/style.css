@@ -10,21 +10,10 @@ main {
 	display: flex;
 	height: 100%;
 	flex-wrap: wrap;
-	padding: 10px;
+	padding: 10px 10px 1px 10px;
 }
-#art1 {
-	display: flex;
-	width: 100%;
-	height: 1000px;
-}
-#kartta {
-	min-height: 500px;
-	width: 30%;
-	margin-top: 40px;
-	margin-bottom: 10px;
-	margin-right: 15px;
-	margin-left: 10px;
-}
+
+
 header {
 	display: flex;
 	height: auto;
@@ -38,34 +27,31 @@ header img{
 }
 header h1{
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	text-align: center;
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 70px;
 	font-weight: bolder;
+	width: 50%;
 }
-footer {
-	display: flex;
-	background-color: rgba(255, 255, 255, 0.3);
-	width: 100%;
-	margin-top: 20px;
-	height:100px;
-}
+
 figure{
+	min-width: 218px;
 	width: 15%;
 	padding: 0;
 	margin: 0;
 }
 nav {
-	width: 85%;
-	overflow: hidden;
+	display: flex;
+	width: 35%;
+	align-items: center;
+	justify-content: flex-end;
 }
 nav ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: flex-end;
 }
 nav ul li {
 	margin-right: 20px;
@@ -93,44 +79,136 @@ nav ul li a:hover {
 p{
 	margin: 10px;
 }
+#art1 {
+	display: flex;
+
+	width: 100%;
+	height: 1000px;
+}
+#kartta {
+	min-height: 600px;
+	width: 35%;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
 #div2 {
-	width:55%;
+	overflow: hidden;
+	width:65%;
 	padding: 20px;
 	margin-top: 25%;
-	margin-left: 5%;
+	margin-bottom: 10px;
+	margin-left: 20px;
 	background-color: rgba(255, 255, 255, 0.3);
 }
 img{
 	max-width: 100%;
 }
 footer {
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 100%;
+	margin-top: 20px;
+	height:100px;
 }
-
-
 #map1{
 	height: 100%;
 	width: 100%;
 }
-
-@media only screen and (max-width: 1000px) {
-	header{
-		height: 75px;
-		padding: 2px;
-	}
-	img{
-		height: 100%;
-	}
+@media only screen and (max-width: 1700px) {
 	#kartta {
-		height: 500px;
-		width: 100%;
-		margin: 0;
+		min-height: 600px;
+		width: 45%;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		margin-right: 20px;
 	}
 	#div2 {
-		width: 100%;
-		margin-top: 30px;
-		margin-left: 0;
+		overflow: hidden;
+		width:55%;
+		padding: 20px;
+		margin-top: 25%;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		background-color: rgba(255, 255, 255, 0.3);
 	}
-	#art1{
+}
+@media only screen and (max-width: 1560px) {
+	header h1{
+		align-items: center;
+		justify-content: start;
+		font-size: 50px;
+		font-weight: bolder;
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 1240px) {
+	header {
+		display: flex;
 		flex-wrap: wrap;
+		width: 100%;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+	header h1{
+		align-items: center;
+		justify-content: start;
+		font-size: 50px;
+		font-weight: bolder;
+		width: 20%;
+	}
+	nav {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	#art1 {
+		flex-wrap: wrap;
+	}
+	#kartta {
+		min-height: 600px;
+		width: 100%;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+	#div2 {
+		overflow: hidden;
+		width:100%;
+		padding: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		margin-left: 0;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+}
+@media only screen and (max-width: 680px) {
+	header h1{
+		font-size: 30px;
+	}
+	nav {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+	nav ul li {
+		margin-top: 45px;
+		margin-right: 20px;
+		list-style-type: none;
+	}
+	nav ul li a {
+		font-weight: bolder;
+		top: 50%;
+		left:50%;
+		font-size: 20px;
+		color: #262626;
+		border-top: 0;
+		border-bottom: 0;
+		letter-spacing: 2px;
 	}
 }
