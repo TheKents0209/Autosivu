@@ -10,7 +10,7 @@ main {
 	display: flex;
 	height: 100%;
 	flex-wrap: wrap;
-	padding: 20px;
+	padding: 10px;
 }
 #art1 {
 	display: flex;
@@ -19,15 +19,25 @@ main {
 }
 #kartta {
 	min-height: 500px;
-	width: 50%;
+	width: 30%;
+	margin-top: 40px;
+	margin-bottom: 10px;
 	margin-right: 15px;
+	margin-left: 10px;
 }
 header {
 	display: flex;
-	margin-bottom: 20px;
 	height: auto;
 	width: 100%;
 	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+footer {
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 100%;
+	margin-top: 20px;
+	height:100px;
 }
 figure{
 	width: 15%;
@@ -36,7 +46,7 @@ figure{
 }
 nav {
 	width: 85%;
-	background-color: transparent;
+
 	overflow: hidden;
 }
 nav ul {
@@ -70,10 +80,11 @@ p{
 	margin: 10px;
 }
 #div2 {
-	width:50%;
+	width:55%;
 	padding: 20px;
-	margin-left: 15px;
-	background-color: rgba(255, 255, 255, 0.5);
+	margin-top: 25%;
+	margin-left: 5%;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 img{
 	max-width: 100%;
