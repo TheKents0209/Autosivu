@@ -7,5 +7,33 @@
 </head>
 <body>
 
+<form name="palaute" method="post" action="Palaute.php">
+    <p>Nimi:
+        <input name="Nimet" id="Nimet" type="text" size="30" maxlength="50">
+    </p>
+    <input type="hidden" name="Viesti" value="Tämä viesti tulee Autot- sivustolta">
+    <p>Valitse viestin aihe:
+        <input type="radio" name="Tiedot" id="Tieto1" value="EkaTieto"> Haluan korjata/lisätä autojen tietoja
+        <input type="radio" name="Tiedot" id="Tieto2" value="TokaTieto"> Muu palaute<br>
+        Äidinkieli:
+        <select name="Aidinkieli" id="Aidinkieli">
+            <option value="Ei_valittu">Valitse asiointikieli</option>
+            <option value="FI">Suomi</option>
+            <option value="SE">Ruotsi</option>
+            <option value="GB">Englanti</option>
+        </select>
+    </p>
+    <p>Palaute:<br>
+        <textarea name="Palautteeni" cols="40" rows="5" id="Palautteeni"></textarea>
+    </p>
+    <p>
+        <input type="submit" name="Submit" value="Lähetä">
+
+        <input type="reset" name="Reset" value="Tyhjennä">
+
+    </p>
+</form>
+
+
 </body>
 </html>
