@@ -78,10 +78,12 @@ function zoomToFeature(event) {
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlight,
-        mouseout: resetHighlight,
-        click: onClick
+        mouseout: resetHighlight
     });
 }
 function onClick(event) {
-    console.log(event.sourceTarget.feature.properties.Maakunta);
+    window.open("ohjeet.html", window);
+    //window.location.href="ohjeet.html"+"maakunta";
+    let maakunta = event.sourceTarget.feature.properties.Maakunta;
+    console.log("Maakunta:" + maakunta);
 }
