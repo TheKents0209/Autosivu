@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="Responsiveness added">
+    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="fix">
+      <change afterPath="$PROJECT_DIR$/ohjeet.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KUVAT/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ohjeet.html" beforeDir="false" afterPath="$PROJECT_DIR$/ohjeet.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -62,19 +63,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kenert\WebstormProjects\Autosivu\PHP" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="" />
+      <changelist id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="Responsiveness added" />
       <created>1606207008544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606207008544</updated>
       <workItem from="1606207010489" duration="1848000" />
+      <workItem from="1606809761912" duration="8312000" />
     </task>
     <task id="LOCAL−00001" summary="fixes">
       <created>1606575226785</created>
@@ -82,7 +89,31 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1606575226785</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Responsiveness added">
+      <created>1606578904942</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1606578904942</updated>
+    </task>
+    <task id="LOCAL−00003" summary="fixed so map gets one instance">
+      <created>1606811936275</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1606811936275</updated>
+    </task>
+    <task id="LOCAL−00004" summary="added Palaute.php">
+      <created>1606814223789</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1606814223789</updated>
+    </task>
+    <task id="LOCAL−00005" summary="fix">
+      <created>1606818045360</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1606818045360</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,24 +134,29 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixes" />
     <MESSAGE value="Responsiveness added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Responsiveness added" />
+    <MESSAGE value="fixed so map gets one instance" />
+    <MESSAGE value="added Palaute.php" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="520" y="180" key="FileChooserDialogImpl" timestamp="1606209448686">
-      <screen x="0" y="0" width="1465" height="864" />
+    <state x="909" y="292" key="FileChooserDialogImpl" timestamp="1606578958315">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="520" y="180" key="FileChooserDialogImpl/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209448686" />
+    <state x="909" y="292" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1606578958315" />
     <state x="286" y="80" key="SettingsEditor" timestamp="1606209460596">
       <screen x="0" y="0" width="1465" height="864" />
     </state>
     <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
-    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1606575231646">
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1606818048016">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606575231646" />
-    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606209527709">
-      <screen x="0" y="0" width="1465" height="864" />
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606818048016" />
+    <state x="965" y="561" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606815165845">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209527709" />
+    <state x="965" y="561" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606815165845" />
   </component>
 </project>
