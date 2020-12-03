@@ -76,13 +76,67 @@ nav ul li a:hover {
 	background-color: white;
 }
 
-p{
+#div p{
 	font-size: 25px;
 	margin: 10px;
 }
+#art2{
+	display: flex;
+	width: 100%;
+}
+input[type=text]{
+	padding: 12px 20px;
+	font-size: 20px;
+}
+textarea {
+	font-size: 20px;
+	padding: 12px 20px;
+}
+input[type="radio"] {
+	height: 30px;
+	width: 30px;
+}
+select{
+	font-size: 40px;
+}
+input[type="submit"], input[type="reset"]{
+	font-size: 40px;
+}
+input[type="submit"]:hover{
+	background-color: #00a123;
+}
+input[type="reset"]:hover{
+	background-color: #bf0d04;
+}
+form {
+	text-align: center;
+	width: 100%;
+}
+table {
+	text-align: center;
+	width: 100%;
+}
+form p{
+	color: white;
+	font-size: 30px;
+}
+#art3{
+	display: flex;
+	color:white;
+	width: 100%;
+}
+#art3 th{
+	font-size: 20px;
+}
+#art3 tr th input[type="text"] {
+	padding: 12px 20px;
+	font-size: 20px;
+}
+#art3 h1{
+	text-align: center;
+}
 #art1 {
 	display: flex;
-
 	width: 100%;
 	height: 1000px;
 }
@@ -106,11 +160,12 @@ img{
 	max-width: 100%;
 }
 footer {
-	display: flex;
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	margin-top: -200px;
 	background-color: rgba(255, 255, 255, 0.3);
 	width: 100%;
-	margin-top: 20px;
-	height:100px;
 }
 #map1{
 	height: 100%;

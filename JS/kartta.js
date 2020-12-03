@@ -82,8 +82,15 @@ function onEachFeature(feature, layer) {
     });
 }
 function onClick(event) {
-
     let maakunta = event.sourceTarget.feature.properties.Maakunta;
-    window.location.href="ohjeet.html";
-    //console.log("Maakunta:" + maakunta);
+    //window.location.href="haku.html";
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("art1").innerHTML = this.responseText;
+            console.log(this.responseText);
+        }
+    };
+    xhttp.open("GET", "haku.php?maakunta="+maakunta, true);
+    xhttp.send();
 }

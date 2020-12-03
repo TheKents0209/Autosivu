@@ -6,33 +6,57 @@
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<main>
+    <header>
+        <figure>
+            <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218" w></a>
+        </figure>
+        <h1>Autobongarit</h1>
+        <nav>
+            <ul>
+                <li><a href="haku.html">HAKU</a></li>
+                <li><a href="tekijat.html">TEKIJÄT</a></li>
+                <li><a href="ohjeet.html">OHJEET</a></li>
+                <li><a href="palaute.html">PALAUTE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="art2">
+        <form name="palaute" method="post" action="Palaute.php">
+            <p>Nimi:
+                <input name="Nimet" id="Nimet" type="text" size="30" maxlength="50">
+            </p>
+            <input type="hidden" name="Viesti" value="Tämä viesti tulee Autot- sivustolta">
+            <p>Valitse viestin aihe:
+                <input type="radio" name="Tiedot" id="Tieto1" value="EkaTieto"> Haluan korjata/lisätä autojen tietoja
+                <input type="radio" name="Tiedot" id="Tieto2" value="TokaTieto"> Muu palaute<br>
+            </p>
+            <p>
+                Äidinkieli:
+                <select name="Aidinkieli" id="Aidinkieli">
+                    <option value="Ei_valittu">Valitse asiointikieli</option>
+                    <option value="FI">Suomi</option>
+                    <option value="SE">Ruotsi</option>
+                    <option value="GB">Englanti</option>
+                </select>
+            </p>
+            <p>Palaute:
+                <textarea name="Palautteeni" cols="40" rows="5" id="Palautteeni"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="Submit" value="Lähetä">
+                <input type="reset" name="Reset" value="Tyhjennä">
+            </p>
+        </form>
+    </article>
+    <footer>
+        <a href=""></a>
+    </footer>
+</main>
+</body>
+</html>
 
-<form name="palaute" method="post" action="Palaute.php">
-    <p>Nimi:
-        <input name="Nimet" id="Nimet" type="text" size="30" maxlength="50">
-    </p>
-    <input type="hidden" name="Viesti" value="Tämä viesti tulee Autot- sivustolta">
-    <p>Valitse viestin aihe:
-        <input type="radio" name="Tiedot" id="Tieto1" value="EkaTieto"> Haluan korjata/lisätä autojen tietoja
-        <input type="radio" name="Tiedot" id="Tieto2" value="TokaTieto"> Muu palaute<br>
-        Äidinkieli:
-        <select name="Aidinkieli" id="Aidinkieli">
-            <option value="Ei_valittu">Valitse asiointikieli</option>
-            <option value="FI">Suomi</option>
-            <option value="SE">Ruotsi</option>
-            <option value="GB">Englanti</option>
-        </select>
-    </p>
-    <p>Palaute:<br>
-        <textarea name="Palautteeni" cols="40" rows="5" id="Palautteeni"></textarea>
-    </p>
-    <p>
-        <input type="submit" name="Submit" value="Lähetä">
 
-        <input type="reset" name="Reset" value="Tyhjennä">
-
-    </p>
-</form>
 
 
 </body>
