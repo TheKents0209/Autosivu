@@ -19,10 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="fix">
-      <change afterPath="$PROJECT_DIR$/ohjeet.php" afterDir="false" />
+    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="progress">
+      <change afterPath="$PROJECT_DIR$/hakuphp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ohjeet.html" beforeDir="false" afterPath="$PROJECT_DIR$/ohjeet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/kartta.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/kartta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haku.php" beforeDir="false" afterPath="$PROJECT_DIR$/haku.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ohjeet.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -63,12 +64,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PHP" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../js_tehtavat" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kenert\WebstormProjects\Autosivu" />
       <recent name="C:\Users\Kenert\WebstormProjects\Autosivu\PHP" />
     </key>
   </component>
@@ -81,7 +84,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606207008544</updated>
       <workItem from="1606207010489" duration="1848000" />
-      <workItem from="1606809761912" duration="8312000" />
+      <workItem from="1606809761912" duration="15420000" />
+      <workItem from="1606894497355" duration="17322000" />
+      <workItem from="1606992251644" duration="18270000" />
     </task>
     <task id="LOCAL−00001" summary="fixes">
       <created>1606575226785</created>
@@ -113,11 +118,26 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1606818045360</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="fix">
+      <created>1606818237062</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1606818237062</updated>
+    </task>
+    <task id="LOCAL−00007" summary="progress">
+      <created>1606994986892</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1606994986892</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -137,26 +157,36 @@
     <MESSAGE value="fixed so map gets one instance" />
     <MESSAGE value="added Palaute.php" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="909" y="292" key="FileChooserDialogImpl" timestamp="1606578958315">
+    <state x="1489" y="531" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606932581633">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1489" y="531" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606932581633" />
+    <state x="1536" y="635" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1607009206149">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1536" y="635" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1607009206149" />
+    <state x="909" y="292" key="FileChooserDialogImpl" timestamp="1607034116825">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="520" y="180" key="FileChooserDialogImpl/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209448686" />
-    <state x="909" y="292" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1606578958315" />
-    <state x="286" y="80" key="SettingsEditor" timestamp="1606209460596">
-      <screen x="0" y="0" width="1465" height="864" />
-    </state>
-    <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
-    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1606818048016">
+    <state x="909" y="292" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1607034116825" />
+    <state x="1522" y="564" width="916" height="711" key="SettingsEditor" timestamp="1607009614617">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606818048016" />
-    <state x="965" y="561" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606815165845">
+    <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
+    <state x="1522" y="564" width="916" height="711" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607009614617" />
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1606994999795">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606994999795" />
+    <state x="965" y="561" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606818270288">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209527709" />
-    <state x="965" y="561" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606815165845" />
+    <state x="965" y="561" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606818270288" />
   </component>
 </project>

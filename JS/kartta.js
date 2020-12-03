@@ -1,5 +1,6 @@
 let geojson;
 let map;
+const proxy = 'https://cors-anywhere.herokuapp.com/';
 
 // Asetukset paikkatiedon hakua varten (valinnainen)
 const options = {
@@ -63,7 +64,7 @@ function highlight(event) {
         fillOpacity: 0.7
     });
 
-    if(!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+    if(!L.Browser.ie || !L.Browser.opera || !L.Browser.edge) {
         layer.bringToFront();
     }
 
@@ -83,14 +84,30 @@ function onEachFeature(feature, layer) {
 }
 function onClick(event) {
     let maakunta = event.sourceTarget.feature.properties.Maakunta;
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("art1").innerHTML = xhttp.responseText;
+            console.log(xhttp.responseText);
+        }
+    };
+    //xhttp.open("GET", proxy+"http://localhost/haku.php?q="+maakunta, true);
+    xhttp.open("GET", proxy+"http://users.metropolia.fi/~kenertml/haku.php?maakunta="+maakunta, true);
+    http://users.metropolia.fi/~kenertml/
+    xhttp.send();
+    //console.log(fetch('${proxy}http://localhost/haku.php?q="+maakunta'))
+}
+/*function onClick(event) {
+    let maakunta = event.sourceTarget.feature.properties.Maakunta;
     //window.location.href="haku.html";
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("art1").innerHTML = this.responseText;
-            console.log(this.responseText);
+            document.getElementById("art1").innerHTML = xhttp.responseText;
+            console.log(xhttp.responseText);
         }
     };
-    xhttp.open("GET", "haku.php?maakunta="+maakunta, true);
+
+    xhttp.open("GET", "http://localhost/haku.php?q="+maakunta, true);
     xhttp.send();
-}
+}*/
