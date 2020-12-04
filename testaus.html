@@ -36,21 +36,13 @@
         </nav>
     </header>
 
-
-    <article id="art1">
-        <div id="kartta">
-            <div id="map1"></div>
-            <script src="JS/kartta.js"></script>
-        </div>
-        <div id="div2">
-            <p>Autobongarit- sivustolla voit katsella autojen kuvia ja tarkastella autojen tarkempia tietoja maakunnittain.<br>
-                Ylävalikosta löytyvät <strong>HAKU</strong>,<strong>TEKIJÄT</strong>,<strong>OHJEET</strong> ja <strong>PALAUTE</strong> -sivut<br>
-                <strong>HAKU</strong>: pääset hakemaan
-                Samalla lomakkeella tulevat perille myös sivustoon liittyvät palautteet sekä lisätietokyselyt.<br>
-                Lisäksi ohjevalikkoa klikkaamalla pääset katsomaan Autobongarit-sivuston ohjevideon.<br>
-            </p>
-        </div>
-    </article>
+    <div>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            Select image to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+        </form>
+    </div>
 
     <footer>
         <a href=""></a>

@@ -1,5 +1,4 @@
 <?php
-
 $servername = "mysql.metropolia.fi";
 $username = "kenertml";
 $password = "JennaKuha2002";
@@ -15,12 +14,12 @@ if ($conn->connect_error) {
 }
 $haku_maakunta = $_GET["maakunta"];
 
-$sql = "SELECT * FROM $table_name WHERE maakunta = '$haku_maakunta'";
+$sql = "SELECT * FROM $table_name WHERE maakunta = '$haku_maakunta' ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
 echo "<header>";
-echo "<h2>" . $haku_maakunta . "</h2>";
-echo "<table>";
-echo "<tr>";
+echo "<h2>Autot maakunnalta: " . $haku_maakunta . "</h2>";
+echo "</header>";
+echo "<div id=figures>";
 while($row = mysqli_fetch_assoc($result)){
 	$id = $row['id'];
 	$maakunta = $row['maakunta'];
@@ -28,15 +27,12 @@ while($row = mysqli_fetch_assoc($result)){
 	$malli = $row['malli'];
 	$vari = $row['vari'];
 	$kuva = $row['kuva'];
-
-	echo "<th>ID</th>";
-echo "<td>" . $id . "</td>";
-echo "<th>Maakunta</th>";
-echo "<td>" . $maakunta . "</td>";
-echo "<th>merkki</th>";
-echo "<td>" . $merkki . "</td>";
-echo "<th>malli</th>";
-echo "<td>" . $malli . "</td>";
-
+	echo "<figure>";
+	echo "<img src=" . $kuva . ">";
+	echo "<figcaption>";
+	echo "<p>Merkki:" . $merkki . "<br><br>Malli:" . $malli . "<br><br>VÃ¤ri:" . $vari . "<br></p>";
+	echo "</figcaption>";
+	echo "</figure>";
 }
+echo "</div>";
 ?>

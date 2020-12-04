@@ -84,18 +84,19 @@ function onEachFeature(feature, layer) {
 }
 function onClick(event) {
     let maakunta = event.sourceTarget.feature.properties.Maakunta;
+    const art1 = document.getElementById("art1");
+    const new_art = document.createElement("article");
+    new_art.setAttribute("id", "art4");
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("art1").innerHTML = xhttp.responseText;
+            new_art.innerHTML = xhttp.responseText;
             console.log(xhttp.responseText);
         }
     };
-    //xhttp.open("GET", proxy+"http://localhost/haku.php?q="+maakunta, true);
+    art1.replaceWith(new_art);
     xhttp.open("GET", proxy+"http://users.metropolia.fi/~kenertml/haku.php?maakunta="+maakunta, true);
-    http://users.metropolia.fi/~kenertml/
     xhttp.send();
-    //console.log(fetch('${proxy}http://localhost/haku.php?q="+maakunta'))
 }
 /*function onClick(event) {
     let maakunta = event.sourceTarget.feature.properties.Maakunta;

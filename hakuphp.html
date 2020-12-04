@@ -1,0 +1,24 @@
+<?php
+$mysqli = new mysqli("mysql.metropolia.fi", "kenertml", "JennaKuha2002", "kenertml");
+if($mysqli->connect_error) {
+exit('Could not connect');
+}
+
+$sql = "SELECT maakunta
+FROM customers WHERE maakunta = ?";
+
+$stmt = $mysqli->prepare($sql);
+$stmt->bind_param("s", $_GET['q']);
+$stmt->execute();
+$stmt->store_result();
+$stmt->bind_result($maakunta);
+$stmt->fetch();
+$stmt->close();
+
+echo "<table>";
+    echo "<tr>";
+        echo "<th>CustomerID</th>";
+        echo "<td>" . $maakunta . "</td>";
+        echo "</tr>";
+    echo "</table>";
+?>
