@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="Tekijät sivustoon tehty lisäys.&#10;Erillinen Tyylitiedosto tekijät lisätty.&#10;Yritetty saada palautelomakeeseen yhteys, jotta voisi kirjoittaa vastaanottajan sivulle, että; Kiitos palauttteesta.">
+    <list default="true" id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/kartta.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/kartta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ohjeet.html" beforeDir="false" afterPath="$PROJECT_DIR$/ohjeet.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606207008544</updated>
       <workItem from="1606207010489" duration="1848000" />
+      <workItem from="1607172263635" duration="391000" />
     </task>
     <task id="LOCAL−00001" summary="fixes">
       <created>1606575226785</created>
@@ -93,7 +94,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1607170502856</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin.">
+      <created>1607171622224</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1607171622224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +122,8 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="Responsiveness added" />
     <MESSAGE value="Tekijät sivustoon tehty lisäys.&#10;Erillinen Tyylitiedosto tekijät lisätty.&#10;Yritetty saada palautelomakeeseen yhteys, jotta voisi kirjoittaa vastaanottajan sivulle, että; Kiitos palauttteesta." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tekijät sivustoon tehty lisäys.&#10;Erillinen Tyylitiedosto tekijät lisätty.&#10;Yritetty saada palautelomakeeseen yhteys, jotta voisi kirjoittaa vastaanottajan sivulle, että; Kiitos palauttteesta." />
+    <MESSAGE value="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin." />
+    <option name="LAST_COMMIT_MESSAGE" value="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin." />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="180" key="FileChooserDialogImpl" timestamp="1607171054884">
@@ -127,15 +135,15 @@
       <screen x="0" y="0" width="1465" height="864" />
     </state>
     <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
-    <state x="566" y="284" key="Vcs.Push.Dialog.v2" timestamp="1607170517406">
+    <state x="566" y="284" key="Vcs.Push.Dialog.v2" timestamp="1607171627509">
       <screen x="0" y="0" width="1465" height="864" />
     </state>
-    <state x="566" y="284" key="Vcs.Push.Dialog.v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1607170517406" />
+    <state x="566" y="284" key="Vcs.Push.Dialog.v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1607171627509" />
     <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606575231646" />
-    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607166140100">
+    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607172295082">
       <screen x="0" y="0" width="1465" height="864" />
     </state>
-    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209527709" />
+    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1607172295082" />
     <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864@0.0.1465.864" timestamp="1607166140100" />
   </component>
 </project>
