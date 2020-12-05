@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="progress">
-      <change afterPath="$PROJECT_DIR$/KUVAT/kenertkuva.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KUVAT/marinkuva.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ohjeet.html" beforeDir="false" afterPath="$PROJECT_DIR$/ohjeet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tekijat.html" beforeDir="false" afterPath="$PROJECT_DIR$/tekijat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_10_32__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_10_32__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_10_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_10_53__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_11_17__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_11_17__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_12_22__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2020_12_22__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_12_2020_13_01__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_12_2020_13_01__Default_Changelist_.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
@@ -65,7 +66,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Autosivu backup/Autosivu 5.12 - Copy" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -95,6 +96,7 @@
       <workItem from="1607073396953" duration="27475000" />
       <workItem from="1607125097941" duration="306000" />
       <workItem from="1607178090876" duration="757000" />
+      <workItem from="1607178883968" duration="444000" />
     </task>
     <task id="LOCAL−00001" summary="fixes">
       <created>1606575226785</created>
@@ -144,7 +146,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1607125202902</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="progress">
+      <created>1607178924009</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1607178924010</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,20 +191,28 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1536" y="635" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1607009206149" />
-    <state x="909" y="292" key="FileChooserDialogImpl" timestamp="1607034116825">
+    <state x="909" y="292" key="FileChooserDialogImpl" timestamp="1607179070567">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="520" y="180" key="FileChooserDialogImpl/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209448686" />
-    <state x="909" y="292" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1607034116825" />
+    <state x="909" y="292" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1607179070567" />
+    <state x="37" y="187" key="MergeDialog" timestamp="1607178975443">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="37" y="187" key="MergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607178975443" />
+    <state x="826" y="533" key="MultipleFileMergeDialog" timestamp="1607178982700">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="826" y="533" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607178982700" />
     <state x="1522" y="564" width="916" height="711" key="SettingsEditor" timestamp="1607009614617">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
     <state x="1522" y="564" width="916" height="711" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607009614617" />
-    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1606994999795">
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1607178928437">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606994999795" />
+    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607178928437" />
     <state x="965" y="561" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606818270288">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

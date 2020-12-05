@@ -82,8 +82,18 @@ function onEachFeature(feature, layer) {
     });
 }
 function onClick(event) {
-
     let maakunta = event.sourceTarget.feature.properties.Maakunta;
-    window.location.href="ohjeet.html";
-    //console.log("Maakunta:" + maakunta);
+    const art1 = document.getElementById("art1");
+    const new_art = document.createElement("article");
+    new_art.setAttribute("id", "art4");
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            new_art.innerHTML = xhttp.responseText;
+            console.log(xhttp.responseText);
+        }
+    };
+    art1.replaceWith(new_art);
+    xhttp.open("GET", proxy+"http://users.metropolia.fi/~kenertml/haku.php?maakunta="+maakunta, true);
+    xhttp.send();
 }
