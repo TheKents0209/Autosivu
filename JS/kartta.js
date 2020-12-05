@@ -1,5 +1,7 @@
 let geojson;
 let map;
+const proxy = 'https://cors-anywhere.herokuapp.com/';
+
 
 // Asetukset paikkatiedon hakua varten (valinnainen)
 const options = {
@@ -86,6 +88,9 @@ function onClick(event) {
     const art1 = document.getElementById("art1");
     const new_art = document.createElement("article");
     new_art.setAttribute("id", "art4");
+    new_art.innerHTML = `<h4>
+            Etsitään autoja, Odota hetki...
+         </h4>`;
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -94,6 +99,6 @@ function onClick(event) {
         }
     };
     art1.replaceWith(new_art);
-    xhttp.open("GET", proxy+"http://users.metropolia.fi/~kenertml/haku.php?maakunta="+maakunta, true);
+    xhttp.open("GET", "http://users.metropolia.fi/~kenertml/haku.php?maakunta="+maakunta, true);
     xhttp.send();
 }
