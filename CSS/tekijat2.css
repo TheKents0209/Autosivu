@@ -1,0 +1,18 @@
+
+h1{
+	text-align:center;
+}
+
+figure { 
+    display: inline-block;
+	
+}
+
+nav {
+	
+	 border-style: solid;
+	 border-width: 3px;
+	 margin: 50px 200px;
+	 background-color: #FF6D9E;
+	
+	}

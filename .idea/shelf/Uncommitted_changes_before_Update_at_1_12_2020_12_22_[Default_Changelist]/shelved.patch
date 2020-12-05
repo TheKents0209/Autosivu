@@ -1,0 +1,136 @@
+Index: JS/kartta.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>let geojson;\r\nlet map;\r\n\r\n// Asetukset paikkatiedon hakua varten (valinnainen)\r\nconst options = {\r\n    enableHighAccuracy: true,\r\n    timeout: 5000,\r\n    maximumAge: 0\r\n};\r\n\r\n// Funktio, joka ajetaan, kun paikkatiedot on haettu\r\nfunction success(pos) {\r\n    const crd = pos.coords;\r\n\r\n    // Tulostetaan paikkatiedot konsoliin\r\n    console.log('Your current position is:');\r\n    console.log(`Latitude : ${crd.latitude}`);\r\n    console.log(`Longitude: ${crd.longitude}`);\r\n    console.log(`More or less ${crd.accuracy} meters.`);\r\n\r\n    createMap(crd.latitude, crd.longitude);\r\n}\r\n\r\n// Funktio, joka ajetaan, jos paikkatietojen hakemisessa tapahtuu virhe\r\nfunction error(err) {\r\n    console.warn(`ERROR(${err.code}): ${err.message}`);\r\n    //If user denied Geolocation, create map on lat 61 and lon 25\r\n    createMap(61,25);\r\n}\r\n\r\n// Käynnistetään paikkatietojen haku\r\nnavigator.geolocation.getCurrentPosition(success, error, options);\r\n\r\nfunction createMap(lat, lon) {\r\n    //Initializing map and setting coordinates and zoom level\r\n    console.log(lat);\r\n    console.log(lon);\r\n    map = L.map('map1').setView([lat, lon], 7);\r\n\r\n    //Adds layer to map\r\n    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {\r\n        attribution: 'Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>',\r\n        maxZoom: 18,\r\n        id: 'mapbox/satellite-v9',\r\n        tileSize: 512,\r\n        zoomOffset: -1,\r\n        accessToken: 'pk.eyJ1IjoidGhla2VudHMiLCJhIjoiY2todnV6ZTA4MWhvbzJxbGh4ajI0Y2x4ayJ9.7AlWsPXyZBj2IatCVfjnVg'\r\n    }).addTo(map);\r\n\r\n    geojson = L.geoJson(maakunnat, {\r\n        onEachFeature: onEachFeature\r\n    }).addTo(map);\r\n    geojson.addEventListener(\"click\", onClick);\r\n}\r\n//If mouse on layer, highlight\r\nfunction highlight(event) {\r\n    let layer = event.target;\r\n\r\n    layer.setStyle({\r\n        weight: 5,\r\n        color: '#00BFFF',\r\n        dashArray: '',\r\n        fillOpacity: 0.7\r\n    });\r\n\r\n    if(!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {\r\n        layer.bringToFront();\r\n    }\r\n\r\n}\r\n//resets highlight when mouse exits layer\r\nfunction resetHighlight(event) {\r\n    geojson.resetStyle(event.target);\r\n}\r\nfunction zoomToFeature(event) {\r\n    map.fitBounds(event.target.getBounds());\r\n}\r\nfunction onEachFeature(feature, layer) {\r\n    layer.on({\r\n        mouseover: highlight,\r\n        mouseout: resetHighlight,\r\n        onClick: onClick(\"maakunta\")\r\n    });\r\n}\r\nfunction onClick(event) {\r\n    //window.open(\"ohjeet.html\", \"_self\");\r\n    window.location.href=\"ohjeet.html\";\r\n    let maakunta = event.sourceTarget.feature.properties.Maakunta;\r\n    console.log(\"Maakunta:\" + maakunta);\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- JS/kartta.js	(revision 4ac6a81a2fb640fce40a934d226c654f3956e1ba)
++++ JS/kartta.js	(date 1606817563810)
+@@ -84,7 +84,7 @@
+ }
+ function onClick(event) {
+     //window.open("ohjeet.html", "_self");
+-    window.location.href="ohjeet.html";
++    //window.location.href="ohjeet.html";
+     let maakunta = event.sourceTarget.feature.properties.Maakunta;
+     console.log("Maakunta:" + maakunta);
+ }
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4357d864-b1b3-4581-a031-8ae7edd75afd\" name=\"Default Changelist\" comment=\"Responsiveness added\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/CSS/style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/CSS/style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/KUVAT/logo.jpg\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"JsBowerSettings\">\r\n    <node-interpreter value=\"project\" />\r\n    <bower-package value=\"\" />\r\n    <bower.json value=\"\" />\r\n  </component>\r\n  <component name=\"JsFlowSettings\">\r\n    <service-enabled>true</service-enabled>\r\n    <exe-path />\r\n    <other-services-enabled>true</other-services-enabled>\r\n    <auto-save>true</auto-save>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1kjHJCJrkLe0qFuHfWG62B80nHt\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"vcs.Git\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"236e67b8-6ee8-4521-82f4-d6575991b840\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1606207008544</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1606207008544</updated>\r\n      <workItem from=\"1606207010489\" duration=\"1848000\" />\r\n    </task>\r\n    <task id=\"LOCAL−00001\" summary=\"fixes\">\r\n      <created>1606575226785</created>\r\n      <option name=\"number\" value=\"LOCAL−00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL−00001\" />\r\n      <updated>1606575226785</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"fixes\" />\r\n    <MESSAGE value=\"Responsiveness added\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Responsiveness added\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"520\" y=\"180\" key=\"FileChooserDialogImpl\" timestamp=\"1606209448686\">\r\n      <screen x=\"0\" y=\"0\" width=\"1465\" height=\"864\" />\r\n    </state>\r\n    <state x=\"520\" y=\"180\" key=\"FileChooserDialogImpl/0.0.1465.864/3840.0.1440.870@0.0.1465.864\" timestamp=\"1606209448686\" />\r\n    <state x=\"286\" y=\"80\" key=\"SettingsEditor\" timestamp=\"1606209460596\">\r\n      <screen x=\"0\" y=\"0\" width=\"1465\" height=\"864\" />\r\n    </state>\r\n    <state x=\"286\" y=\"80\" key=\"SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864\" timestamp=\"1606209460596\" />\r\n    <state x=\"989\" y=\"460\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1606575231646\">\r\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1400\" />\r\n    </state>\r\n    <state x=\"989\" y=\"460\" key=\"Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400\" timestamp=\"1606575231646\" />\r\n    <state x=\"552\" y=\"346\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1606209527709\">\r\n      <screen x=\"0\" y=\"0\" width=\"1465\" height=\"864\" />\r\n    </state>\r\n    <state x=\"552\" y=\"346\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864\" timestamp=\"1606209527709\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 4ac6a81a2fb640fce40a934d226c654f3956e1ba)
++++ .idea/workspace.xml	(date 1606818039964)
+@@ -19,22 +19,14 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="4357d864-b1b3-4581-a031-8ae7edd75afd" name="Default Changelist" comment="Responsiveness added">
++    <list default="true" id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="Tekstikenttä">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/KUVAT/logo.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/JS/kartta.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/kartta.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="HTML File" />
+-      </list>
+-    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -51,15 +43,12 @@
+     <auto-save>true</auto-save>
+   </component>
+   <component name="ProjectId" id="1kjHJCJrkLe0qFuHfWG62B80nHt" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
+-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+@@ -75,14 +64,21 @@
+       <option name="presentableId" value="Default" />
+       <updated>1606207008544</updated>
+       <workItem from="1606207010489" duration="1848000" />
++      <workItem from="1606815049503" duration="2658000" />
+     </task>
+-    <task id="LOCAL−00001" summary="fixes">
+-      <created>1606575226785</created>
++    <task id="LOCAL−00001" summary="Palaute.html ja css koodiin p-tagi">
++      <created>1606815152207</created>
+       <option name="number" value="LOCAL−00001" />
+       <option name="presentableId" value="LOCAL−00001" />
+-      <updated>1606575226785</updated>
++      <updated>1606815152207</updated>
++    </task>
++    <task id="LOCAL−00002" summary="Tekstikenttä">
++      <created>1606816606592</created>
++      <option name="number" value="LOCAL−00002" />
++      <option name="presentableId" value="LOCAL−00002" />
++      <updated>1606816606592</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -101,26 +97,30 @@
+     <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value="fixes" />
+-    <MESSAGE value="Responsiveness added" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Responsiveness added" />
++    <MESSAGE value="Palaute.html ja css koodiin p-tagi" />
++    <MESSAGE value="Tekstikenttä" />
++    <option name="LAST_COMMIT_MESSAGE" value="Tekstikenttä" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="520" y="180" key="FileChooserDialogImpl" timestamp="1606209448686">
+       <screen x="0" y="0" width="1465" height="864" />
+     </state>
+     <state x="520" y="180" key="FileChooserDialogImpl/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209448686" />
++    <state x="140" y="69" key="MergeDialog" timestamp="1606814252691">
++      <screen x="0" y="0" width="1465" height="864" />
++    </state>
++    <state x="140" y="69" key="MergeDialog/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606814252691" />
+     <state x="286" y="80" key="SettingsEditor" timestamp="1606209460596">
+       <screen x="0" y="0" width="1465" height="864" />
+     </state>
+     <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
+-    <state x="989" y="460" key="Vcs.Push.Dialog.v2" timestamp="1606575231646">
+-      <screen x="0" y="0" width="2560" height="1400" />
++    <state x="326" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606816613578">
++      <screen x="0" y="0" width="1465" height="864" />
+     </state>
+-    <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606575231646" />
+-    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606209527709">
++    <state x="326" y="165" key="Vcs.Push.Dialog.v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606816613578" />
++    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606817910473">
+       <screen x="0" y="0" width="1465" height="864" />
+     </state>
+-    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209527709" />
++    <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606817910473" />
+   </component>
+ </project>
+\ No newline at end of file
