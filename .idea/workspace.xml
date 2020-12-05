@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin.Lisätty myös upotettu video ohjeet sivulle." />
+    <list default="true" id="236e67b8-6ee8-4521-82f4-d6575991b840" name="Default Changelist" comment="Lisätty myös Kenertin kuva sivulle. ja kuvat kansioon.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ohjeet.html" beforeDir="false" afterPath="$PROJECT_DIR$/ohjeet.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +81,8 @@
       <updated>1606207008544</updated>
       <workItem from="1606207010489" duration="1848000" />
       <workItem from="1607172263635" duration="824000" />
+      <workItem from="1607173687761" duration="605000" />
+      <workItem from="1607174353626" duration="2207000" />
     </task>
     <task id="LOCAL−00001" summary="fixes">
       <created>1606575226785</created>
@@ -102,7 +108,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1607172892476</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Lisätty myös Kenertin kuva sivulle. ja kuvat kansioon.">
+      <created>1607173933184</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1607173933184</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +138,8 @@
     <MESSAGE value="Tekijät sivustoon tehty lisäys.&#10;Erillinen Tyylitiedosto tekijät lisätty.&#10;Yritetty saada palautelomakeeseen yhteys, jotta voisi kirjoittaa vastaanottajan sivulle, että; Kiitos palauttteesta." />
     <MESSAGE value="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin." />
     <MESSAGE value="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin.Lisätty myös upotettu video ohjeet sivulle." />
-    <option name="LAST_COMMIT_MESSAGE" value="Oma Kuva lisätty KUVAT kansioon ja lisätty tieto tekijät koodiin.Lisätty myös upotettu video ohjeet sivulle." />
+    <MESSAGE value="Lisätty myös Kenertin kuva sivulle. ja kuvat kansioon." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lisätty myös Kenertin kuva sivulle. ja kuvat kansioon." />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="180" key="FileChooserDialogImpl" timestamp="1607171054884">
@@ -138,10 +151,10 @@
       <screen x="0" y="0" width="1465" height="864" />
     </state>
     <state x="286" y="80" key="SettingsEditor/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1606209460596" />
-    <state x="566" y="284" key="Vcs.Push.Dialog.v2" timestamp="1607172895139">
+    <state x="566" y="284" key="Vcs.Push.Dialog.v2" timestamp="1607173935875">
       <screen x="0" y="0" width="1465" height="864" />
     </state>
-    <state x="566" y="284" key="Vcs.Push.Dialog.v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1607172895139" />
+    <state x="566" y="284" key="Vcs.Push.Dialog.v2/0.0.1465.864/3840.0.1440.870@0.0.1465.864" timestamp="1607173935875" />
     <state x="989" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606575231646" />
     <state x="552" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607172295082">
       <screen x="0" y="0" width="1465" height="864" />
