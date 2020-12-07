@@ -1,9 +1,10 @@
-html{
+html {
 	background: url("../KUVAT/index_background_FULL2.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
 }
 main {
 	display: flex;
@@ -153,12 +154,12 @@ form p{
 	font-size: 28px;
 	background-color: rgba(255, 255, 255, 0.3);
 }
-#tehty_haku_art figure figcaption p, #haku_art figure figcaption p{
+#tehty_haku_art figure figcaption p,#haku_art figure figcaption p{
 	margin-right: 0;
 	padding-left: 15px;
 	overflow: hidden;
 }
-#tehty_haku_art figure, #haku_art figure{
+#tehty_haku_art figure,#haku_art figure{
 	color:white;
 	min-width: 425px;
 	min-height: 247px;
@@ -166,7 +167,7 @@ form p{
 	margin-right: 15px;
 	font-weight: bold;
 }
-#tehty_haku_art, #haku_art{
+#tehty_haku_art,#haku_art{
 	width: 100%;
 }
 #art5 {

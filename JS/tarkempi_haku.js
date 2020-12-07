@@ -4,6 +4,7 @@ const proxy = 'https://cors-anywhere.herokuapp.com/';
 function fillInfo(form) {
     //Gets form values and assigns them to variables
     let maakunta_haku = form.maakunta.value;
+    console.log(maakunta_haku);
     let merkki_haku = form.merkki.value;
     let malli_haku = form.malli.value;
     let vari_haku = form.vari.value;
@@ -22,6 +23,6 @@ function fillInfo(form) {
         }
     };
     //Performs php search
-    xhttp2.open("GET", proxy+"http://users.metropolia.fi/~kenertml/tarkempi_haku.php?maakunta="+maakunta_haku+"&merkki="+merkki_haku+"&malli="+malli_haku+"&vari="+vari_haku, true);
+    xhttp2.open("GET", proxy+"https://users.metropolia.fi/~kenertml/tarkempi_haku.php?maakunta="+maakunta_haku+"&merkki="+merkki_haku+"&malli="+malli_haku+"&vari="+vari_haku, true);
     xhttp2.send();
 }

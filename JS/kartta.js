@@ -97,6 +97,6 @@ function onClick(event) {
     };
     art1.replaceWith(new_art);
     //Performs php search
-    xhttp.open("GET", proxy+"http://users.metropolia.fi/~kenertml/haku.php?maakunta="+maakunta, true);
+    xhttp.open("GET", proxy+"https://users.metropolia.fi/~kenertml/haku.php?maakunta="+maakunta, true);
     xhttp.send();
 }
