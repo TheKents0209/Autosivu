@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <!--ääkköset-->
+    <!-- sivun otsikko -->
+    <title>Autobongarit</title>
+    <!-- charsetin asetus -->
     <meta charset="UTF-8">
-    <title>Haut</title>
-    <!-- tämän elementin sisältö tulee CSS- sivulta-->
+    <!-- viewportin leveyden asettelu -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tyylitiedoston asetus-->
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <!--bodyn sisältö näytetään sivulla-->
 <body>
 <main>
     <header>
+        <!-- sivuston logo-->
         <figure>
-            <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218" w></a>
+            <a href="index.html"><img src="KUVAT/logo.png" height="120" width="218" alt="Logo"></a>
         </figure>
+        <!-- sivun otsikko-->
         <h1>Autobongarit</h1>
         <nav>
+            <!--lista, linkkejä muille HTML- sivuille-->
             <ul>
                 <li><a href="haku.html">HAKU</a></li>
                 <li><a href="tekijat.html">TEKIJÄT</a></li>
@@ -28,10 +34,11 @@
         <h2>Katso ohjevideo:</h2>
     </header>
     <!-- artikkeli, jonka iframe tagissä oleva video tulee sivulle-->
-    <article id="art6">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/LBjUh4bYF8w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <article id="video_art">
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/LBjUh4bYF8w" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
     </article>
-
 </main>
 </body>
 </html>

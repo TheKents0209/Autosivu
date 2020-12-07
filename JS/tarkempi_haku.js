@@ -7,8 +7,8 @@ function fillInfo(form) {
     let merkki_haku = form.merkki.value;
     let malli_haku = form.malli.value;
     let vari_haku = form.vari.value;
-    const art3 = document.getElementById("art3");
-    art3.innerHTML = `<h4>
+    const haku_art = document.getElementById("haku_art");
+    haku_art.innerHTML = `<h4>
             Etsitään autoja, Odota hetki...
          </h4>`;
     const tarkka_haku_tulos = document.createElement("article");
@@ -17,7 +17,7 @@ function fillInfo(form) {
     xhttp2.onreadystatechange = function() {
         // If everything is alright on connection, executes
         if (this.readyState == 4 && this.status == 200) {
-            art3.innerHTML = xhttp2.responseText;
+            haku_art.innerHTML = xhttp2.responseText;
             console.log(xhttp2.responseText);
         }
     };

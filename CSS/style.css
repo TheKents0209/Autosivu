@@ -5,7 +5,6 @@ html{
 	-o-background-size: cover;
 	background-size: cover;
 }
-
 main {
 	display: flex;
 	height: 100%;
@@ -13,8 +12,7 @@ main {
 	padding: 10px 10px 1px 10px;
 	font-family: 'Montserrat', sans-serif;
 }
-a { color: #1e2124; }
-
+#etusivuteksti a { color: #1e2124; }
 header {
 	display: flex;
 	height: auto;
@@ -36,7 +34,6 @@ header h1{
 	font-weight: bolder;
 	width: 50%;
 }
-
 figure{
 	min-width: 218px;
 	width: 15%;
@@ -79,34 +76,30 @@ nav ul li a:hover {
 p,h1,h2,h4{
 	font-family: 'Montserrat', sans-serif;
 }
-figure p{
-	font-family: 'Montserrat', sans-serif;
+h4 {
+	color:white;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-size: 50px;
 }
-
-#div2 p{
+#etusivuteksti p{
 	font-size: 25px;
 	margin: 10px;
 }
-#art2{
+#palaute_art{
 	display: flex;
 	width: 100%;
 }
-input[type=text]{
+input[type=text],textarea{
 	padding: 12px 20px;
 	font-size: 20px;
-}
-textarea {
-	font-size: 20px;
-	padding: 12px 20px;
 }
 input[type="radio"] {
 	height: 30px;
 	width: 30px;
 }
-select{
-	font-size: 30px;
-}
-input[type="submit"], input[type="reset"]{
+input[type="submit"],input[type="reset"],select{
 	font-size: 30px;
 }
 input[type="submit"]:hover{
@@ -115,11 +108,7 @@ input[type="submit"]:hover{
 input[type="reset"]:hover{
 	background-color: #bf0d04;
 }
-form {
-	text-align: center;
-	width: 100%;
-}
-table {
+form,table{
 	text-align: center;
 	width: 100%;
 }
@@ -127,22 +116,21 @@ form p{
 	color: white;
 	font-size: 30px;
 }
-#art3{
+#haku_art{
 	display: flex;
 	color:white;
 	width: 100%;
 }
-#art3 th{
+#haku_art table {
+	margin-top: 20px;
+}
+#haku_art th{
 	font-size: 20px;
 }
-#art3 tr th input[type="text"] {
-	padding: 12px 20px;
-	font-size: 20px;
-}
-#art3 h1{
+#haku_art h1{
 	text-align: center;
 }
-#art4 header {
+#tehty_haku_art header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -165,12 +153,12 @@ form p{
 	font-size: 28px;
 	background-color: rgba(255, 255, 255, 0.3);
 }
-#art4 figure figcaption p, #art3 figure figcaption p{
+#tehty_haku_art figure figcaption p, #haku_art figure figcaption p{
 	margin-right: 0;
 	padding-left: 15px;
 	overflow: hidden;
 }
-#art4 figure, #art3 figure{
+#tehty_haku_art figure, #haku_art figure{
 	color:white;
 	min-width: 425px;
 	min-height: 247px;
@@ -178,15 +166,8 @@ form p{
 	margin-right: 15px;
 	font-weight: bold;
 }
-#art4, #art3{
+#tehty_haku_art, #haku_art{
 	width: 100%;
-}
-h4 {
-	color:white;
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	font-size: 50px;
 }
 #art5 {
 	width: 100%;
@@ -221,7 +202,7 @@ h4 {
 	color: white;
 	font-size: 20px;
 }
-#art6{
+#video_art{
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -234,7 +215,7 @@ h4 {
 	flex-wrap: wrap;
 	width: 100%;
 }
-#art1 {
+#kartta_art {
 	display: flex;
 	width: 100%;
 	height: 1000px;
@@ -246,7 +227,7 @@ h4 {
 	margin-bottom: 10px;
 	margin-right: 20px;
 }
-#div2 {
+#etusivuteksti {
 	overflow: hidden;
 	width:65%;
 	padding: 20px;
@@ -279,7 +260,7 @@ footer {
 		margin-bottom: 10px;
 		margin-right: 20px;
 	}
-	#div2 {
+	#etusivuteksti {
 		overflow: hidden;
 		width:55%;
 		padding: 20px;
@@ -318,7 +299,7 @@ footer {
 		align-items: center;
 		justify-content: center;
 	}
-	#art1 {
+	#kartta_art {
 		flex-wrap: wrap;
 	}
 	#kartta {
@@ -328,7 +309,7 @@ footer {
 		margin-bottom: 10px;
 		margin-right: 0;
 	}
-	#div2 {
+	#etusivuteksti {
 		overflow: hidden;
 		width:100%;
 		padding: 20px;
@@ -367,5 +348,4 @@ footer {
 		border-bottom: 0;
 		letter-spacing: 2px;
 	}
-
 }

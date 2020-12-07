@@ -81,9 +81,9 @@ function onEachFeature(feature, layer) {
 function onClick(event) {
     //Gets clicked GeoJSON layers maakunta
     let maakunta = event.sourceTarget.feature.properties.Maakunta;
-    const art1 = document.getElementById("art1");
+    const art1 = document.getElementById("kartta_art");
     const new_art = document.createElement("article");
-    new_art.setAttribute("id", "art4");
+    new_art.setAttribute("id", "tehty_haku_art");
     new_art.innerHTML = `<h4>
             Etsitään autoja, Odota hetki...
          </h4>`;

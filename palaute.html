@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <!-- ääkköset-->
+    <!-- sivun otsikko -->
+    <title>Autobongarit</title>
+    <!-- charsetin asetus -->
     <meta charset="UTF-8">
-    <!--sivun otsikko-->
-    <title>Title</title>
-    <!-- tässä likataan CSS- sivulle, josta tulee tyyli-->
+    <!-- viewportin leveyden asettelu -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tyylitiedoston asetus-->
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 
 </head>
@@ -13,14 +15,14 @@
 
 <main>
     <header>
-        <!--logo sivun vasempaan yläkulmaan-->
+        <!-- sivuston logo-->
         <figure>
-            <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218"></a>
+            <a href="index.html"><img src="KUVAT/logo.png" height="120" width="218" alt="Logo"></a>
         </figure>
-        <!--sivuston nimen otsikko-->
+        <!-- sivun otsikko-->
         <h1>Autobongarit</h1>
         <nav>
-            <!-- lista, jossa linkit muille HTML- sivuille-->
+            <!--lista, linkkejä muille HTML- sivuille-->
             <ul>
                 <li><a href="haku.html">HAKU</a></li>
                 <li><a href="tekijat.html">TEKIJÄT</a></li>
@@ -33,7 +35,7 @@
         <!-- otsikko tag -->
         <h2>Lähetä palautetta:</h2>
     </header>
-    <article id="art2">
+    <article id="palaute_art">
         <!-- tämä linkkaa PHP- sivulle -->
         <form name="palaute" method="post" action="http://users.metropolia.fi/~kenertml/Palaute.php">
             <!-- input- kenttä johon syötetään lähettäjän nimi-->
@@ -68,7 +70,6 @@
             </p>
         </form>
     </article>
-
 </main>
 </body>
 </html>

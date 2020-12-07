@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <!-- ääkköset näkyville-->
+    <!-- sivun otsikko -->
+    <title>Autobongarit</title>
+    <!-- charsetin asetus -->
     <meta charset="UTF-8">
-    <!--sivun otsikko-->
-    <title>Tekijatsivu</title>
-    <!-- tämä on linkki css sivulle -->
-    <!-- täältä määritellään sivun tyyli-->
+    <!-- viewportin leveyden asettelu -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tyylitiedoston asetus-->
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <!-- tästä alkaa body- section, jonka haluat näyttää sivulla-->
 <main>
     <header>
+        <!-- sivuston logo-->
         <figure>
-            <!--logo, joka näkyy Web-sivun oikeassa yläkulmassa-->
-            <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218" w></a>
+            <a href="index.html"><img src="KUVAT/logo.png" height="120" width="218" alt="Logo"></a>
         </figure>
-        <!-- otsikko tag -->
+        <!-- sivun otsikko-->
         <h1>Autobongarit</h1>
         <nav>
+            <!--lista, linkkejä muille HTML- sivuille-->
             <ul>
-                <!--linkit muille HTML- sivuille-->
                 <li><a href="haku.html">HAKU</a></li>
                 <li><a href="tekijat.html">TEKIJÄT</a></li>
                 <li><a href="ohjeet.html">OHJEET</a></li>
@@ -38,26 +39,25 @@
         <div id="tekijat_kuvat">
             <!--tässä kuvat ja otsikot, jotka näytetään sivulla-->
             <figure>
-                <!--kuva1, joka näkyy web- sivulle-->
-                <img src="KUVAT/hannankuva.jpg" alt="tekija1" style="width:100%">
+                <!--kuva1, joka näkyy Web-sivulla-->
+                <img src="KUVAT/kenertkuva.png" alt="tekija3" style="width:100%">
                 <!--kuvaotsikko1, joka näkyy Web-sivulla-->
+                <figcaption>Kenert Lauri</figcaption>
+            </figure>
+            <figure>
+                <!--kuva2, joka näkyy web- sivulle-->
+                <img src="KUVAT/hannankuva.jpg" alt="tekija1" style="width:100%">
+                <!--kuvaotsikko2, joka näkyy Web-sivulla-->
                 <figcaption>Hanna Kaimo</figcaption>
             </figure>
             <figure>
-                <!--kuva2, joka näkyy Web- sivulla-->
+                <!--kuva3, joka näkyy Web- sivulla-->
                 <img src="KUVAT/marinkuva.jpg" alt="tekija2" style="width:100%">
-                <!--kuvaotsikko2, joka näkyy Web-sivulla-->
-                <figcaption>Mari Eronen</figcaption>
-            </figure>
-            <figure>
-                <!--kuva3, joka näkyy Web-sivulla-->
-                <img src="KUVAT/kenertkuva.png" alt="tekija3" style="width:100%">
                 <!--kuvaotsikko3, joka näkyy Web-sivulla-->
-                <figcaption>Kenert Lauri</figcaption>
+                <figcaption>Mari Eronen</figcaption>
             </figure>
         </div>
     </article>
-
 </main>
 </body>
 </html>

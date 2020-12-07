@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <!-- ääkköset-->
+    <!-- sivun otsikko -->
+    <title>Autobongarit</title>
+    <!-- charsetin asetus -->
     <meta charset="UTF-8">
-    <!-- otsikko-->
-    <title>Title</title>
-    <!--tämä linkkaa css- sivulle-->
+    <!-- viewportin leveyden asettelu -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tyylitiedoston asetus-->
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
     <!--täältä osoiteesta tulee Javascript-->
-    <script type="text/javascript" src="JS/tarkempi_haku.js"> </script>
+    <script type="text/javascript" src="JS/tarkempi_haku.js"></script>
 </head>
 <!--tästä alkaa body, tiedot jotka haluat näyttää-->
 <body>
 <main>
     <header>
-        <!--logo, joka näkyy Web-sivun oikeassa yläkulmassa-->
+        <!-- sivuston logo-->
         <figure>
-            <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218" w></a>
+            <a href="index.html"><img src="KUVAT/logo.png" height="120" width="218" alt="Logo"></a>
         </figure>
-        <!-- sivuston nimi-->
+        <!-- sivun otsikko-->
         <h1>Autobongarit</h1>
         <nav>
-            <!--lista-->
+            <!--lista, linkkejä muille HTML- sivuille-->
             <ul>
-                <!--linkit muille sivuille-->
                 <li><a href="haku.html">HAKU</a></li>
                 <li><a href="tekijat.html">TEKIJÄT</a></li>
                 <li><a href="ohjeet.html">OHJEET</a></li>
@@ -35,40 +36,44 @@
         <!-- kakkostason otsikko-->
         <h2>Etsi autoja:</h2>
     </header>
-    <!-- artikkeli, jonka id on art3-->
-    <article id="art3">
-        <!--nämä tiedot lähetetään-->
+    <!-- artikkeli, jonka id on haku_art-->
+    <article id="haku_art">
         <form action="#" onsubmit="fillInfo(this)">
-            <!-- keskitetty taulukko, jonka input kentät ja nimet näytetään Web-sivulla-->
-                <table class="center">
-                    <tr>
-                        <th>Maakunta :</th>
-                        <tr class="break"></tr>
-                        <th><input type="text" name ="maakunta"></th>
-                        <tr class="break"></tr>
-                        <th>Merkki :</th>
-                        <tr class="break"></tr>
-                        <th><input type="text" name ="merkki"></th>
-                        <tr class="break"></tr>
-                        <th>Malli : </th>
-                        <tr class="break"></tr>
-                        <th><input type="text" name ="malli"></th>
-                        <tr class="break"></tr>
-                        <th>Väri: </th>
-                        <tr class="break"></tr>
-                        <th><input type="text" name ="vari"></th>
-                        <tr class="break"></tr>
-                    </tr><br>
-                    <tr>
-                        <th>
-                            <!-- tässä tiedot lähetetään-->
-                            <input type ="submit" value ="Etsi">
-                        </th>
-                    </tr>
-                </table>
+            <!-- taulukko, jonka input kentät näytetään Web-sivulla-->
+            <table class="center">
+                <tr>
+                    <th>Maakunta :</th>
+                </tr>
+                <tr class="break">
+                <th><input type="text" name="maakunta"></th>
+                </tr>
+                <tr class="break">
+                    <th>Merkki :</th>
+                </tr>
+                <tr class="break">
+                    <th><input type="text" name="merkki"></th>
+                </tr>
+                <tr class="break">
+                    <th>Malli :</th>
+                </tr>
+                <tr class="break">
+                    <th><input type="text" name="malli"></th>
+                </tr>
+                <tr class="break">
+                    <th>Väri:</th>
+                </tr>
+                <tr class="break">
+                    <th><input type="text" name="vari"></th>
+                </tr>
+                <tr>
+                    <th>
+                        <!-- tässä tiedot lähetetään-->
+                        <input type="submit" value="Etsi">
+                    </th>
+                </tr>
+            </table>
         </form>
     </article>
-
 </main>
 </body>
 </html>
