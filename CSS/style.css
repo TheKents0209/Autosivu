@@ -1,19 +1,20 @@
-html {
+html{
 	background: url("../KUVAT/index_background_FULL2.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: 'Montserrat', sans-serif;
 }
+
 main {
-	display: flex;
+	display: flex;/*tässä uloin elementti flexin sisälle*/
 	height: 100%;
 	flex-wrap: wrap;
 	padding: 10px 10px 1px 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;/*kirjasintyyli*/
 }
-#etusivuteksti a { color: #1e2124; }
+a { color: #1e2124; }
+
 header {
 	display: flex;
 	height: auto;
@@ -27,7 +28,7 @@ header img{
 	min-width: 218px;
 }
 header h1{
-	display: flex;
+	display: flex;/*tässä luodaan flex-box*/
 	align-items: center;
 	justify-content: center;
 	margin: 0;
@@ -35,6 +36,7 @@ header h1{
 	font-weight: bolder;
 	width: 50%;
 }
+
 figure{
 	min-width: 218px;
 	width: 15%;
@@ -77,30 +79,34 @@ nav ul li a:hover {
 p,h1,h2,h4{
 	font-family: 'Montserrat', sans-serif;
 }
-h4 {
-	color:white;
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	font-size: 50px;
+figure p{
+	font-family: 'Montserrat', sans-serif;
 }
-#etusivuteksti p{
+
+#div2 p{
 	font-size: 25px;
 	margin: 10px;
 }
-#palaute_art{
+#art2{
 	display: flex;
 	width: 100%;
 }
-input[type=text],textarea{
+input[type=text]{
 	padding: 12px 20px;
 	font-size: 20px;
+}
+textarea {
+	font-size: 20px;
+	padding: 12px 20px;
 }
 input[type="radio"] {
 	height: 30px;
 	width: 30px;
 }
-input[type="submit"],input[type="reset"],select{
+select{
+	font-size: 30px;
+}
+input[type="submit"], input[type="reset"]{
 	font-size: 30px;
 }
 input[type="submit"]:hover{
@@ -109,7 +115,11 @@ input[type="submit"]:hover{
 input[type="reset"]:hover{
 	background-color: #bf0d04;
 }
-form,table{
+form {
+	text-align: center;
+	width: 100%;
+}
+table {
 	text-align: center;
 	width: 100%;
 }
@@ -117,21 +127,22 @@ form p{
 	color: white;
 	font-size: 30px;
 }
-#haku_art{
+#art3{
 	display: flex;
 	color:white;
 	width: 100%;
 }
-#haku_art table {
-	margin-top: 20px;
-}
-#haku_art th{
+#art3 th{
 	font-size: 20px;
 }
-#haku_art h1{
+#art3 tr th input[type="text"] {
+	padding: 12px 20px;
+	font-size: 20px;
+}
+#art3 h1{
 	text-align: center;
 }
-#tehty_haku_art header {
+#art4 header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -154,21 +165,28 @@ form p{
 	font-size: 28px;
 	background-color: rgba(255, 255, 255, 0.3);
 }
-#tehty_haku_art figure figcaption p,#haku_art figure figcaption p{
+#art4 figure figcaption p, #art3 figure figcaption p{
 	margin-right: 0;
 	padding-left: 15px;
 	overflow: hidden;
 }
-#tehty_haku_art figure,#haku_art figure{
-	color:white;
+#art4 figure, #art3 figure{
+	color:white;/*tekstin väri valkoinen*/
 	min-width: 425px;
 	min-height: 247px;
 	margin-top: 15px;
 	margin-right: 15px;
 	font-weight: bold;
 }
-#tehty_haku_art,#haku_art{
+#art4, #art3{
 	width: 100%;
+}
+h4 {
+	color:white;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-size: 50px;
 }
 #art5 {
 	width: 100%;
@@ -203,12 +221,12 @@ form p{
 	color: white;
 	font-size: 20px;
 }
-#video_art{
+#art6{
 	height: 100%;
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: center;/*laittaa elementin keskelle*/
+	align-items: center;/*laittaa elementin keskelle pystysunnassa*/
 	margin-top: 10px;
 }
 #figures {
@@ -216,7 +234,7 @@ form p{
 	flex-wrap: wrap;
 	width: 100%;
 }
-#kartta_art {
+#art1 {
 	display: flex;
 	width: 100%;
 	height: 1000px;
@@ -228,7 +246,7 @@ form p{
 	margin-bottom: 10px;
 	margin-right: 20px;
 }
-#etusivuteksti {
+#div2 {
 	overflow: hidden;
 	width:65%;
 	padding: 20px;
@@ -261,7 +279,7 @@ footer {
 		margin-bottom: 10px;
 		margin-right: 20px;
 	}
-	#etusivuteksti {
+	#div2 {
 		overflow: hidden;
 		width:55%;
 		padding: 20px;
@@ -300,7 +318,7 @@ footer {
 		align-items: center;
 		justify-content: center;
 	}
-	#kartta_art {
+	#art1 {
 		flex-wrap: wrap;
 	}
 	#kartta {
@@ -310,8 +328,8 @@ footer {
 		margin-bottom: 10px;
 		margin-right: 0;
 	}
-	#etusivuteksti {
-		overflow: hidden;
+	#div2 {
+		overflow: hidden;/*scrollbar tulee, jos tarpeen*/
 		width:100%;
 		padding: 20px;
 		margin-top: 20px;
@@ -326,12 +344,12 @@ footer {
 	}
 	nav {
 		width: 100%;
-		align-items: center;
+		align-items: center;/*asettaa elementin keskelle*/
 		justify-content: center;
 	}
 	nav ul {
-		margin: 0;
-		padding: 0;
+		margin: 0;/*Marginaali elementin ulkopuolelle*/
+		padding: 0;/*Tyhjä tila elementin rajan sisäpuolelle*/
 		display: inline-block;
 	}
 	nav ul li {
@@ -347,17 +365,7 @@ footer {
 		color: #262626;
 		border-top: 0;
 		border-bottom: 0;
-		letter-spacing: 2px;
+		letter-spacing: 2px;/*kirjainväli 2px*/
 	}
-}
-@media only screen and (max-width: 480px) {
-	header h1{
-		font-size: 20px;
-	}
-	header{
-		width: 95%;
-	}
-	#kartta_art{
-		width: 95%;
-	}
+
 }
