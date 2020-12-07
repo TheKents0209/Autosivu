@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+    <!-- sivun otsikko-->
     <title>AUTOSIVU</title>
+    <!-- ääkköset-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- tämän elementin sisältö tulee CSS- sivulta-->
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-
+    <!-- sivuston fontit tulevat tältä sivulta-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- kartan tyyli-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
     <!--Tarvittavat kartan tekemiseen -->
@@ -17,19 +21,23 @@
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin="">
     </script>
+    <!-- tämän elementin sisältö tulee Javasriptistä-->
     <script type="text/javascript" src="JS/maakunnat.js"> </script>
 </head>
 
 <body>
 
-
+<!-- main- elementin sisältä näytettän headerissa, sivun yläosassa-->
 <main>
     <header>
+        <!-- tässä sivuston logo-->
         <figure>
             <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218" w></a>
         </figure>
+        <!-- sivuston nimi-->
         <h1>Autobongarit</h1>
         <nav>
+            <!--lista, linkkejä muille HTML- sivuille-->
             <ul>
                 <li><a href="haku.html">HAKU</a></li>
                 <li><a href="tekijat.html">TEKIJÄT</a></li>
@@ -43,26 +51,24 @@
     <article id="art1">
         <div id="kartta">
             <div id="map1"></div>
+            <!--tämän elementin sisältö tulee JavaScript- koodista-->
             <script src="JS/kartta.js"></script>
         </div>
         <div id="div2">
+            <!-- kappale tag, jonka sisältö näkyy etusivulla -->
             <p>Autobongarit- sivustolla voit katsella autojen kuvia ja tarkastella autojen tarkempia tietoja maakunnittain.<br>
-                Ylävalikosta löytyvät <a href="haku.html"><strong>HAKU</strong></a>,<a href="tekijät.html"><strong>TEKIJÄT</strong></a>,<a href="ohjeet.html"><strong>OHJEET</strong></a> ja <a href="palaute.html"><strong>PALAUTE</strong></a> -sivut<br>
-                <strong>HAKU</strong>: pääset hakemaan
-                <br>
-                Samalla lomakkeella tulevat perille myös sivustoon liittyvät palautteet sekä lisätietokyselyt.<br>
-                Lisäksi ohjevalikkoa klikkaamalla pääset katsomaan Autobongarit-sivuston ohjevideon.<br>
+                <a href="haku.html"><strong>HAKU</strong></a>: Etsi autoja maakunnan, merkin, mallin tai värin mukaan.<br>
+                <a href="tekijät.html"><strong>TEKIJÄT</strong></a>: Sivuston tekijät.<br>
+                <a href="ohjeet.html"><strong>OHJEET</strong></a>: Katso sivuston ohjevideo.<br>
+                <a href="palaute.html"><strong>PALAUTE</strong></a>: Jos bongaat jonkun auton kuvan ilman tietoja, voit<br>
+                lähettää halutessasi täydentäviä tai korjaavia tietoja autosta<br>
+                palautelomakkeen kautta. Samalla lomakkeella tulevat perille myös sivustoon liittyvät
+                palautteet sekä lisätietokyselyt.
+
             </p>
         </div>
     </article>
 </main>
-<footer>
-</footer>
-
-
-
-
-
 
 </body>
 </html>

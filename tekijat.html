@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
+    <!-- ääkköset näkyville-->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <!--sivun otsikko-->
+    <title>Tekijatsivu</title>
+    <!-- tämä on linkki css sivulle -->
+    <!-- täältä määritellään sivun tyyli-->
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<!-- tästä alkaa body- section, jonka haluat näyttää sivulla-->
 <main>
     <header>
         <figure>
+            <!--logo, joka näkyy Web-sivun oikeassa yläkulmassa-->
             <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218" w></a>
         </figure>
+        <!-- otsikko tag -->
         <h1>Autobongarit</h1>
         <nav>
             <ul>
+                <!--linkit muille HTML- sivuille-->
                 <li><a href="haku.html">HAKU</a></li>
                 <li><a href="tekijat.html">TEKIJÄT</a></li>
                 <li><a href="ohjeet.html">OHJEET</a></li>
@@ -21,28 +29,35 @@
             </ul>
         </nav>
     </header>
+    <!-- artikkeli- tag, jonka tarkenne on art5-->
     <article id="art5">
         <header>
+            <!--otsikko tag-->
             <h2>Tekijät:</h2>
         </header>
         <div id="tekijat_kuvat">
+            <!--tässä kuvat ja otsikot, jotka näytetään sivulla-->
             <figure>
-                <img src="KUVAT/hannankuva.jpg" alt="Trulli" style="width:100%">
+                <!--kuva1, joka näkyy web- sivulle-->
+                <img src="KUVAT/hannankuva.jpg" alt="tekija1" style="width:100%">
+                <!--kuvaotsikko1, joka näkyy Web-sivulla-->
                 <figcaption>Hanna Kaimo</figcaption>
             </figure>
             <figure>
-                <img src="KUVAT/marinkuva.jpg" alt="Trulli" style="width:100%">
+                <!--kuva2, joka näkyy Web- sivulla-->
+                <img src="KUVAT/marinkuva.jpg" alt="tekija2" style="width:100%">
+                <!--kuvaotsikko2, joka näkyy Web-sivulla-->
                 <figcaption>Mari Eronen</figcaption>
             </figure>
             <figure>
-                <img src="KUVAT/kenertkuva.png" alt="Trulli" style="width:100%">
+                <!--kuva3, joka näkyy Web-sivulla-->
+                <img src="KUVAT/kenertkuva.png" alt="tekija3" style="width:100%">
+                <!--kuvaotsikko3, joka näkyy Web-sivulla-->
                 <figcaption>Kenert Lauri</figcaption>
             </figure>
         </div>
     </article>
-    <footer>
-        <a href=""></a>
-    </footer>
+
 </main>
 </body>
 </html>

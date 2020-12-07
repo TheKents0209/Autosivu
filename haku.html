@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ääkköset-->
     <meta charset="UTF-8">
+    <!-- otsikko-->
     <title>Title</title>
+    <!--tämä linkkaa css- sivulle-->
     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    <!--täältä osoiteesta tulee Javascript-->
     <script type="text/javascript" src="JS/tarkempi_haku.js"> </script>
 </head>
+<!--tästä alkaa body, tiedot jotka haluat näyttää-->
 <body>
 <main>
     <header>
+        <!--logo, joka näkyy Web-sivun oikeassa yläkulmassa-->
         <figure>
             <a href="index.html"><img src="KUVAT/logo.png" height="120"; width="218" w></a>
         </figure>
+        <!-- sivuston nimi-->
         <h1>Autobongarit</h1>
         <nav>
+            <!--lista-->
             <ul>
+                <!--linkit muille sivuille-->
                 <li><a href="haku.html">HAKU</a></li>
                 <li><a href="tekijat.html">TEKIJÄT</a></li>
                 <li><a href="ohjeet.html">OHJEET</a></li>
@@ -23,10 +32,14 @@
         </nav>
     </header>
     <header id="hd2">
+        <!-- kakkostason otsikko-->
         <h2>Etsi autoja:</h2>
     </header>
+    <!-- artikkeli, jonka id on art3-->
     <article id="art3">
+        <!--nämä tiedot lähetetään-->
         <form action="#" onsubmit="fillInfo(this)">
+            <!-- keskitetty taulukko, jonka input kentät ja nimet näytetään Web-sivulla-->
                 <table class="center">
                     <tr>
                         <th>Maakunta :</th>
@@ -48,6 +61,7 @@
                     </tr><br>
                     <tr>
                         <th>
+                            <!-- tässä tiedot lähetetään-->
                             <input type ="submit" value ="Etsi">
                         </th>
                     </tr>
@@ -55,10 +69,6 @@
         </form>
     </article>
 
-
-    <footer>
-        <a href=""></a>
-    </footer>
 </main>
 </body>
 </html>
